@@ -16,7 +16,8 @@ body {
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  padding: 1rem 0rem;
 }
 
 .title {
@@ -41,8 +42,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 0rem;
 
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   border-bottom: 0.05rem solid rgba(0, 0, 0, 0.5);
 }
