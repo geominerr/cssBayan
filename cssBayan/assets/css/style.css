@@ -21,3 +21,59 @@ body {
 .title {
   font-size: 2.5rem;
 }
+
+.accordion {
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item__input {
+  display: none;
+}
+
+.label__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+
+  font-size: 1.5rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
+}
+
+.item__icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem 2rem;
+  background-image: url("../icons/cross.png");
+}
+
+.item__content {
+  width: 100%;
+  text-align: center;
+}
+
+.label__img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.img-memo {
+  width: 0%;
+}
+
+.item__input:checked ~ .item__content .label__img .img-memo {
+  width: 80%;
+  transition: all 0.4s;
+}
+.item:hover .item__content .label__img .img-memo {
+  width: 80%;
+  transition: all 0.4s;
+}
