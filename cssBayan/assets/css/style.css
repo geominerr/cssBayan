@@ -67,6 +67,8 @@ body {
 .label__img {
   display: block;
   width: 100%;
+  overflow-y: hidden;
+
   transition: all 0.3s;
 }
 
@@ -163,12 +165,9 @@ body {
   .label__img:hover {
     cursor: pointer;
   }
+
   .title {
     font-size: 2.8rem;
-  }
-
-  .accordion:hover {
-    cursor: pointer;
   }
 
   .label__img {
@@ -190,6 +189,7 @@ body {
     transform: rotate(0deg);
     transition: all 0.3s;
   }
+
   .item:hover .label__input {
     color: rgba(0, 0, 0, 1);
     border-bottom: none;
@@ -198,9 +198,11 @@ body {
   .item:hover .item__content {
     border-bottom: 0.05rem solid rgba(0, 0, 0, 0.5);
   }
+
   .item:hover .item__icon {
     transform: rotate(0deg);
   }
+
   .label__input {
     color: rgb(47, 155, 240, 1);
     font-size: 2rem;
