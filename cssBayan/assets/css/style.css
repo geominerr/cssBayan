@@ -73,6 +73,7 @@ body {
 .img-memo {
   width: 0%;
   transform: rotate(90deg);
+  transition: all 0.3s;
 }
 
 .item__input:checked ~ .item__content .label__img .img-memo {
@@ -87,6 +88,7 @@ body {
 }
 
 .item__input:checked ~ .label__input {
+  color: rgba(0, 0, 0, 1);
   border-bottom: none;
 }
 
@@ -97,6 +99,7 @@ body {
 .item:active .label__input {
   color: rgb(47, 155, 240, 1);
 }
+
 .item:active .label__input .item__icon {
   background-image: url(../icons/blue_cross.png);
 }
@@ -130,6 +133,9 @@ body {
     height: 1.8rem;
     background-size: 1.8rem 1.8rem;
   }
+  .item__input:checked ~ .item__content .label__img .img-memo {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -153,15 +159,63 @@ body {
 }
 
 @media (min-width: 1260px) {
+  .label__input:hover,
+  .label__img:hover {
+    cursor: pointer;
+  }
   .title {
     font-size: 2.8rem;
   }
-  .label__input {
-    font-size: 2rem;
+
+  .accordion:hover {
+    cursor: pointer;
   }
+
+  .label__img {
+    overflow-y: hidden;
+  }
+
+  .accordion:hover .label__input {
+    color: rgba(0, 0, 0, 1);
+    transition: all 0.5s;
+  }
+
+  .accordion:hover .item__icon {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .item:hover .item__content .label__img .img-memo {
+    width: 30%;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+  }
+  .item:hover .label__input {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: none;
+  }
+
+  .item:hover .item__content {
+    border-bottom: 0.05rem solid rgba(0, 0, 0, 0.5);
+  }
+  .item:hover .item__icon {
+    transform: rotate(0deg);
+  }
+  .label__input {
+    color: rgb(47, 155, 240, 1);
+    font-size: 2rem;
+    transition: all 0.5s;
+  }
+
   .item__icon {
     width: 2rem;
     height: 2rem;
     background-size: 2rem 2rem;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .item:active .label__input {
+    color: rgb(47, 155, 240, 1);
   }
 }
