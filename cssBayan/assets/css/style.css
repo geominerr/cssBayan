@@ -132,7 +132,7 @@ body {
     background-size: 1.3rem 1.3rem;
   }
   .item__input:checked ~ .item__content .label__img .img-memo {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -177,22 +177,18 @@ body {
   }
 
   .item:hover .item__content .label__img .img-memo {
-    width: 30%;
+    padding: 0.6rem;
+    width: 40%;
     transform: rotate(0deg);
     transition: all 0.3s;
   }
 
-  .item:hover .label__input {
-    color: rgba(0, 0, 0, 1);
-    border-bottom: none;
-  }
-
-  .item:hover .item__content {
-    border-bottom: 0.05rem solid rgba(0, 0, 0, 0.5);
-  }
-
   .item:hover .item__icon {
     transform: rotate(0deg);
+  }
+
+  .item__input:checked ~ .label__input {
+    color: rgba(0, 0, 0, 1);
   }
 
   .label__input {
