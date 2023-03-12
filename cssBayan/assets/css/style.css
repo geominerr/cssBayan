@@ -64,6 +64,7 @@ body {
 
   background-image: url("../icons/cross.png");
   transform: rotate(45deg);
+  transition: all 0.3s;
 }
 
 .item__content {
