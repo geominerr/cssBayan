@@ -6,7 +6,7 @@
 4. Placement of the meme, icons and meme text are the same as in provided example gif images (5/5)
 5. Smooth change (transition) of the meme images and icons is done (20/20)
 6. Responsive design with three breakpoints for mobile, tablet, and desktop exist. Accordion is displayed correctly at mobile 320x568, tablet 820x1180, desktop 1920×1080. (Note: breakpoints don't have to be 320x568, 820x1180, 1920x1080). (10/10)
-7. All visual effects when the cursor is hovering over the memes, when the mouse is down on a meme, and when a meme is selected are implemented (10/10)
+7. All visual effects when the cursor is hovering over the memes, when the mouse is down on a meme, and when meme is selected are implemented (10/10)
 8. The entire row (text, icon, and meme image) clickable (5/5)
 9. Cursor over the memes (hover) effect only exists for devices that can support hover. (10/10)
 10. The cursor when it is hovering over the rows of the accordion is changing (5/5)

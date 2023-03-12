@@ -206,3 +206,9 @@ body {
     filter: grayscale(35%);
   }
 }
+
+@media (hover: hover) and (max-width: 740px) {
+  .item:hover .item__content .label__img .img-memo {
+    width: 70%;
+  }
+}
