@@ -201,7 +201,8 @@ body {
   .item:active .label__input {
     color: rgb(47, 155, 240, 1);
   }
+
   .item:active {
-    filter: blur(0.05rem);
+    filter: grayscale(35%);
   }
 }
