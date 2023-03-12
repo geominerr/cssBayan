@@ -78,14 +78,14 @@ body {
 
 .img-memo {
   width: 0%;
-  transform: rotate(90deg);
+
   transition: all 0.3s;
 }
 
 .item__input:checked ~ .item__content .label__img .img-memo {
   padding: 0.6rem;
   width: 70%;
-  transform: rotate(0deg);
+
   transition: all 0.3s;
 }
 
@@ -157,23 +157,45 @@ body {
 }
 
 @media (min-width: 1260px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .label__input {
+    font-size: 1.6rem;
+    transition: all 0.5s;
+  }
+
+  .item__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-size: 1.6rem 1.6rem;
+    transition: all 0.5s;
+  }
+}
+
+@media (hover: hover) {
+  .label__input {
+    color: rgb(47, 155, 240, 1);
+  }
+
+  .item__icon {
+    opacity: 0;
+  }
+
   .label__input:hover,
   .label__img:hover {
     cursor: pointer;
   }
 
-  .title {
-    font-size: 2.4rem;
-  }
-
   .accordion:hover .label__input {
     color: rgba(0, 0, 0, 1);
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
 
   .accordion:hover .item__icon {
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
 
   .item:hover .item__content .label__img .img-memo {
@@ -189,20 +211,6 @@ body {
 
   .item__input:checked ~ .label__input {
     color: rgba(0, 0, 0, 1);
-  }
-
-  .label__input {
-    color: rgb(47, 155, 240, 1);
-    font-size: 1.6rem;
-    transition: all 0.5s;
-  }
-
-  .item__icon {
-    width: 1.6rem;
-    height: 1.6rem;
-    background-size: 1.6rem 1.6rem;
-    opacity: 0;
-    transition: all 0.5s;
   }
 
   .item:active .label__input {
