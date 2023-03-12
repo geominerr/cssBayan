@@ -147,14 +147,12 @@ body {
 
   .label__input {
     font-size: 1.6rem;
-    transition: all 0.5s;
   }
 
   .item__icon {
     width: 1.6rem;
     height: 1.6rem;
     background-size: 1.6rem 1.6rem;
-    transition: all 0.5s;
   }
 }
 
@@ -174,12 +172,12 @@ body {
 
   .accordion:hover .label__input {
     color: rgba(0, 0, 0, 1);
-    transition: all 0.4s;
+    transition: all 0.3s;
   }
 
   .accordion:hover .item__icon {
     opacity: 1;
-    transition: all 0.4s;
+    transition: all 0.3s;
   }
 
   .item:hover .item__content .label__img .img-memo {
@@ -201,6 +199,6 @@ body {
     color: rgb(47, 155, 240, 1);
   }
   .item:active {
-    background-color: blue;
+    filter: blur(0.05rem);
   }
 }
