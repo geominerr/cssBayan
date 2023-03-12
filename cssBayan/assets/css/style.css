@@ -136,27 +136,11 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1260px) {
   .wrapper {
     width: 75%;
   }
 
-  .title {
-    font-size: 2.2rem;
-  }
-
-  .label__input {
-    font-size: 1.5rem;
-  }
-
-  .item__icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-size: 1.5rem 1.5rem;
-  }
-}
-
-@media (min-width: 1260px) {
   .title {
     font-size: 2.4rem;
   }
@@ -215,5 +199,8 @@ body {
 
   .item:active .label__input {
     color: rgb(47, 155, 240, 1);
+  }
+  .item:active {
+    background-color: blue;
   }
 }
